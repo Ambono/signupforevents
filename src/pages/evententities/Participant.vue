@@ -105,7 +105,8 @@ export default {
       console.log('Create new booking');
       console.log('fname:', this.fullname);
 
-      const baseurl = 'http://localhost:50/eventsandperfs/bookings/MakeBooking.php';
+      // const baseurl = 'http://localhost:50/eventsandperfs/bookings/MakeBooking.php';
+      const baseurl = 'http://signupforevents.com/UserMakeBooking.php';
 
       axios({
         method: 'post',

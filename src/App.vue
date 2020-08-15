@@ -2,7 +2,7 @@
   <div id="app">
     <Navigation/>
     <!-- <img src="./assets/logo.png"> -->
-    <div>
+    <div id ="central-container">
     <router-view/>
     </div>
     <footer  id="vue-template-footer">
@@ -32,7 +32,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
   align-content: center;
+  vertical-align:center;
+ width:100%;
+}
+
+#central-container {
+  color: #2c3e50;
+  margin-top: 20px;
+  align-content: center;
+  vertical-align:center;
+  width:50%;
+  margin-left:25%
 }
 </style>

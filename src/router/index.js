@@ -14,6 +14,7 @@ import Performance from '@/pages/performances/Performance';
 import Displays from '@/pages/vues/Displays';
 import Visits from '@/pages/vues/Visits';
 import DisplayEvents from '@/pages/vues/DisplayEvents';
+import DisplayTodayEvents from '@/pages/vues/DisplayTodayEvents';
 import DisplayRegistrations from '@/pages/vues/DisplayRegistrations';
 import Footer from '@/pages/footer/Footer';
 import CreateAccount from '@/usersandlogins/CreateUser';
@@ -90,6 +91,11 @@ export default new Router({
       path: '/displayevents',
       name: 'DisplayEvents',
       component: DisplayEvents
+    },
+    {
+      path: '/displaytodayevents',
+      name: 'DisplayTodayEvents',
+      component: DisplayTodayEvents
     },
     {
       path: '/displayregistrations',

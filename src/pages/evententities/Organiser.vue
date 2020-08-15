@@ -101,7 +101,8 @@ export default {
       console.log('Create new sponsor');
       console.log('fname:', this.fname);
       console.log('account:', this.orgaccount);
-      const baseurl = 'http://localhost:50/eventsandperfs/events/registerEvents.php';
+      // const baseurl = 'http://localhost:50/eventsandperfs/events/registerEvents.php';
+      const baseurl = 'http://signupforevents.com/OrganiserRegisterEvent.php';
 
       axios({
         method: 'post',

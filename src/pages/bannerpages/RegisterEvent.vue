@@ -1,13 +1,13 @@
 <template>
  <div class="vue-template">
   <nav>
-    <router-link to="/Organiser">Organisateur</router-link>
+    <router-link to="/Organiser">Create event</router-link>
   </nav>
    <nav>
-    <router-link to="/Participant">Member</router-link>
+    <router-link to="/Participant">Sign up for event</router-link>
   </nav>
    <nav>
-    <router-link to="/Invitee">Invitees</router-link>
+    <router-link to="/Invitee">Sign up as invitee</router-link>
   </nav>
   </div>
 </template>

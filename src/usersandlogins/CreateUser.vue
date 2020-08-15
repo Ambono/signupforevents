@@ -77,7 +77,8 @@ export default {
       console.log('Create new user');
       console.log('fname:', this.fname);
       console.log('account:', this.orgaccount);
-      const baseurl = 'http://localhost:50/eventsandperfs/users/CreateUsers.php';
+      // const baseurl = 'http://localhost:50/eventsandperfs/users/CreateUser.php';
+      const baseurl = 'http://signupforevents.com/CreateUser.php';
 
       axios({
         method: 'post',

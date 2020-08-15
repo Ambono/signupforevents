@@ -23,7 +23,7 @@ export default {
         },
         {
           id: 1,
-          text: 'Register Event',
+          text: 'Register',
           page: '/RegisterEvent',
         },
         {
@@ -43,7 +43,7 @@ export default {
         },
         {
           id: 5,
-          text: 'Create Account',
+          text: 'Account',
           page: '/CreateAccount',
         },
       ],

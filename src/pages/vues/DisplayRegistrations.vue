@@ -11,33 +11,30 @@
              v-on:click="displayUsers()">Submit</button>
     </form>
 
-    <div class="vue-template-reports">
-    <h3>Registered users matching your search</h3>
-    <table>
+    <table style="align:center">
       <thead>
         <tr>
-          <th scope="col">Id</th>
-          <th scope="col"> UserFullName</th>
-          <th scope="col">UserContact</th>
-          <th scope="col">EventRandCode</th>
-           <th scope="col">Description</th>
-            <th scope="col">UserStatus</th>
+          <!-- <th scope="col">Id</th> -->
+          <th scope="col">Name</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Code</th>
+           <!-- <th scope="col">Description</th> -->
+            <th scope="col">Status</th>
              <th scope="col">Donation</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="user in info" v-bind:key="user.Id">
-          <th scope="row">{{user.Id}}</th>
+          <!-- <th scope="row">{{user.Id}}</th> -->
           <td>{{user.UserFullName}}</td>
           <td>{{user.UserContact}}</td>
           <td>{{user.EventRandCode}}</td>
-          <td>{{user.Description}}</td>
+          <!-- <td>{{user.Description}}</td> -->
           <td>{{user.UserStatus}}</td>
           <td>{{user.Donation}}</td>
         </tr>
       </tbody>
     </table>
-  </div>
   </div>
 </template>
 
@@ -63,7 +60,8 @@ export default {
   },
   methods: {
     displayUsers() {
-      const baseurl = 'http://localhost:50/eventsandperfs/bookings/RetrieveBooking.php';
+      // const baseurl = 'http://localhost:50/eventsandperfs/bookings/RetrieveBooking.php';
+      const baseurl = 'http://signupforevents.com/RetrieveBookings.php';
 
       if (this.searchtext !== '') {
         axios.get(baseurl, {
@@ -82,5 +80,8 @@ export default {
 </script>
 
 <style>
-
+ table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
+     margin-top: 10%;
+  }
 </style>
