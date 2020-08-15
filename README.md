@@ -1,6 +1,6 @@
 # registerforevent
 
-> A Vue.js project
+> A Vue.js project it also called in my localhost register for event
 
 ## Build Setup
 
