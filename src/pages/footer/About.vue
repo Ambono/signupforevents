@@ -3,7 +3,11 @@
 
 <template>
   <div class="vue-template">
-    <p>Here is some information. This is the About page</p>
+    <p>If you need some information about us please feel free to leave us a
+      message in the contact us page.
+      You can access contact us page by clicking the link 'Contact' and filling the form.
+      Thanks in advance.
+    </p>
   </div>
 </template>
 
