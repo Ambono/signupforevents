@@ -5,8 +5,8 @@
   <div class="vue-template">
 
 <h3>Why this app?</h3>
-<p>This app will help you coordinate events such meetings, trainings, parties, voting or any events
-   where people need to invited.</p>
+<p>This app will help you coordinate events such as meetings, trainings, parties, 
+  voting or any events where people need to be invited.</p>
 
         <h3>Here is some information on how it works.</h3>
 
