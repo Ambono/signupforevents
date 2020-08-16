@@ -5,7 +5,7 @@
 `DateBookingsOpen`, `
  FROM `bookings` WHERE 1*/
 <template>
-  <div class="vue-template">
+  <div class="vue-template" style="width:60%; margin-left:20%">
         <form>
             <h3>Register as organiser</h3>
 
@@ -66,10 +66,6 @@
 </template>
 
 <script>
-// export default {
-//   name: 'Organiser', // this is the name of the component
-// };
-
 
 import axios from 'axios';
 
@@ -93,18 +89,10 @@ export default {
       },
     };
   },
-  //   mounted: function () {
-  //     console.log('Hello from Vue!')
-  //     this.getContacts()
-  //   },
 
   methods: {
-  //     getContacts: function(){
-  //     },
-    confirmRegistration() {
-      console.log('Create new booking');
-      console.log('fname:', this.fullname);
 
+    confirmRegistration() {
       // const baseurl = 'http://localhost:50/eventsandperfs/bookings/MakeBooking.php';
       const baseurl = 'http://signupforevents.com/UserMakeBooking.php';
 

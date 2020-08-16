@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 <template>
-  <div class="vue-template">
+  <div class="vue-template" style="width:60%; margin-left:20%">
     <form>
             <h3>Register as organiser</h3>
 
@@ -15,7 +15,7 @@
 
 
             <div class="form-group">
-                <label>SurName</label>
+                <label>Surname</label>
                 <input type="text" class="form-control form-control-lg"  name="sname"
                  v-model= "sname"/>
             </div>
@@ -65,18 +65,9 @@ export default {
       adddescription: '',
     };
   },
-  //   mounted: function () {
-  //     console.log('Hello from Vue!')
-  //     this.getContacts()
-  //   },
 
   methods: {
-  //     getContacts: function(){
-  //     },
     createAccount() {
-      console.log('Create new user');
-      console.log('fname:', this.fname);
-      console.log('account:', this.orgaccount);
       // const baseurl = 'http://localhost:50/eventsandperfs/users/CreateUser.php';
       const baseurl = 'http://signupforevents.com/CreateUser.php';
 

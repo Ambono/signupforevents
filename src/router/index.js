@@ -22,6 +22,12 @@ import CreateAccount from '@/usersandlogins/CreateUser';
 /* eslint-disable */
 import Vuex from 'vuex';
 
+// Import Vue and vue2-collapse
+import VueCollapse from 'vue2-collapse'
+
+// Loading the plugin into the Vue.
+Vue.use(VueCollapse)
+
 Vue.use(Router);
 
 Vue.use(Vuex);

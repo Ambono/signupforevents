@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 <template>
- <div class="vue-template">
+ <div class="vue-template" style="width:60%; margin-left:20%">
         <form>
             <h3>Enter event VIP code</h3>
 

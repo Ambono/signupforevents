@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js"
   },
-  "eslintConfig": {    
+  "eslintConfig": {
     "rules": {
       "no-console": "off"
     }
@@ -21,6 +21,8 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
     "vue": "^2.5.2",
+    "vue-accordion": "^1.0.0",
+    "vue-foldable": "^1.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.5.1"
   },
@@ -78,9 +80,11 @@
     "sinon-chai": "^2.8.0",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-collapsible": "^2.0.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
+    "vue2-collapse": "^1.0.15",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",

@@ -1,6 +1,6 @@
 <template>
-   <div class="vue-template">
-  <form>
+   <div class="vue-template" >
+  <form style="width:60%; margin-left:20%">
      <div class="form-group">
                 <label>Search text</label>
               <input type="text" class="form-control form-control-lg"

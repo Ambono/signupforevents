@@ -38,12 +38,21 @@ export default {
  width:100%;
 }
 
-#central-container {
+/* #central-container {
   color: #2c3e50;
   margin-top: 20px;
   align-content: center;
   vertical-align:center;
   width:50%;
   margin-left:25%
+} */
+
+#central-container {
+  color: #2c3e50;
+  margin-top: 20px;
+  align-content: center;
+  vertical-align:center;
+  width:90%;
+  margin-left:5%
 }
 </style>

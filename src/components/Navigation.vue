@@ -1,6 +1,6 @@
 <template >
    <div class="navbar-light">
-    <h2>Events and Performances catalog</h2>
+    <h2 style="color:gold">Events and Performances catalog</h2>
     <nav>
       <router-link v-for="routes in links"
       v-bind:key="routes.id"

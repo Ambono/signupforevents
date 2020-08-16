@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 <template>
-  <div class="vue-template">
+  <div class="vue-template" style="width:60%; margin-left:20%">
         <form>
             <h3>Send us a message</h3>
 
@@ -39,10 +39,6 @@
 </template>
 
 <script>
-// export default {
-//   name: 'Organiser', // this is the name of the component
-// };
-
 
 import axios from 'axios';
 
@@ -57,18 +53,11 @@ export default {
       reason: '',
     };
   },
-  //   mounted: function () {
-  //     console.log('Hello from Vue!')
-  //     this.getContacts()
-  //   },
 
   methods: {
   //     getContacts: function(){
   //     },
     createMessage() {
-      console.log('Create message');
-      console.log('fname:', this.fname);
-      console.log('account:', this.orgaccount);
       // const baseurl = 'http://localhost:50/eventsandperfs/Acknowledgements/ContactUsMessages.php';
       const baseurl = 'http://signupforevents.com/ContactUs.php';
 
