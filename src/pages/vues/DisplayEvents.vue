@@ -66,11 +66,14 @@ export default {
   methods: {
     displayEvents() {
       // const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveEvents.php';
-      const baseurl = 'http://signupforevents.com/RetrieveEvents.php';
+      const baseurl = 'https://signupforevents.com/RetrieveEvents.php';
 
       if (this.searchtext !== '') {
         axios.get(baseurl, {
           params: this.axiosParams,
+          headers: {
+            Origin: 'https://signupforevents.com',
+          },
         }).then((response) => {
           this.info = response.data;
           this.resetForm();

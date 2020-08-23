@@ -90,7 +90,7 @@ export default {
 
     createEvent() {
       // const baseurl = 'http://localhost:50/eventsandperfs/events/registerEvents.php';
-      const baseurl = 'http://signupforevents.com/OrganiserRegisterEvent.php';
+      const baseurl = 'https://signupforevents.com/OrganiserRegisterEvent.php';
 
       axios({
         method: 'post',
@@ -104,6 +104,9 @@ export default {
           adddescription: this.adddescription,
           vipcode: this.vipcode,
           planneddate: this.planneddate,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         },
       })
         .then((response) => {

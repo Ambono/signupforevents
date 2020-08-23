@@ -59,7 +59,7 @@ export default {
   //     },
     createMessage() {
       // const baseurl = 'http://localhost:50/eventsandperfs/Acknowledgements/ContactUsMessages.php';
-      const baseurl = 'http://signupforevents.com/ContactUs.php';
+      const baseurl = 'https://signupforevents.com/ContactUs.php';
 
       axios({
         method: 'post',
@@ -69,6 +69,9 @@ export default {
           email: this.email,
           phone: this.phone,
           reason: this.reason,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         },
       })
         .then((response) => {

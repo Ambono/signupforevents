@@ -61,11 +61,14 @@ export default {
   methods: {
     displayUsers() {
       // const baseurl = 'http://localhost:50/eventsandperfs/bookings/RetrieveBooking.php';
-      const baseurl = 'http://signupforevents.com/RetrieveBookings.php';
+      const baseurl = 'https://signupforevents.com/RetrieveBookings.php';
 
       if (this.searchtext !== '') {
         axios.get(baseurl, {
           params: this.axiosParams,
+          headers: {
+            Origin: 'https://signupforevents.com',
+          },
         }).then((response) => {
           this.info = response.data;
           this.resetForm();

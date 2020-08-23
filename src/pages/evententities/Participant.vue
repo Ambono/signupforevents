@@ -94,7 +94,7 @@ export default {
 
     confirmRegistration() {
       // const baseurl = 'http://localhost:50/eventsandperfs/bookings/MakeBooking.php';
-      const baseurl = 'http://signupforevents.com/UserMakeBooking.php';
+      const baseurl = 'https://signupforevents.com/UserMakeBooking.php';
 
       axios({
         method: 'post',
@@ -107,6 +107,9 @@ export default {
           amount: this.amount,
           vipcode: this.vipcode,
           status: this.status,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         },
       })
         .then((response) => {

@@ -69,7 +69,7 @@ export default {
   methods: {
     createAccount() {
       // const baseurl = 'http://localhost:50/eventsandperfs/users/CreateUser.php';
-      const baseurl = 'http://signupforevents.com/CreateUser.php';
+      const baseurl = 'https://signupforevents.com/CreateUser.php';
 
       axios({
         method: 'post',
@@ -81,6 +81,9 @@ export default {
           phonumber: this.phonumber,
           orgaccount: this.orgaccount,
           adddescription: this.adddescription,
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         },
       })
         .then((response) => {

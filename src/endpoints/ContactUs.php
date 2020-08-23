@@ -41,6 +41,16 @@ $sql =  "INSERT INTO contactmessages( Name, Email, Phone, DateContacted, Reason)
   }  
 else{
    echo "1 record added"; 
+   echo'<br>';
+ 	  
+   $emailBody ="";
+   $emailBody .= "Thank you for contacting us. Your query will be dealt with soon. ";
+   $to = $email;
+   $subject = "Your query at www.signupforevents.com";
+   $txt = $emailBody;
+   $headers = "From: signupforeventsinfo@gmail.com"."\r\n" .
+   "CC: ";
+    //mail($to,$subject,$txt,$headers);
     } 
 
 print_r("<br> printing full name: ". $fullname.' '.$email.'<br>');

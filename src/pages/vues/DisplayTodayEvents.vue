@@ -48,7 +48,7 @@ export default {
   methods: {
     displayUsers() {
       // const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveEvents.php';
-      const baseurl = 'http://signupforevents.com/RetrieveTodayEvents.php';
+      const baseurl = 'https://signupforevents.com/RetrieveTodayEvents.php';
 
       axios.get(baseurl,
       ).then((response) => {
