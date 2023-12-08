@@ -4,7 +4,7 @@
 <template>
   <div class="vue-template">
         <form>
-            <h3>Register as organiser</h3>
+            <h3>Create an event as organiser</h3>
 
             <div class="form-group">
                 <label>Code(Phone number or email)</label>
@@ -71,8 +71,9 @@
 //   name: 'Organiser', // this is the name of the component
 // };
 
-
 import axios from 'axios';
+import GetUrl from "../../services/urlService";
+import LocalStorageService from "../../services/localStorageService"
 
 export default {
   name: 'Organiser', // this is the name of the component
@@ -95,14 +96,17 @@ export default {
   //   },
 
   methods: {
-  //     getContacts: function(){
-  //     },
+ getApiPath: function () {     
+    return GetUrl("organiserRegisterEvent");   
+    },
+
     createEvent() {
-      console.log('Create new sponsor');
-      console.log('fname:', this.fname);
-      console.log('account:', this.orgaccount);
-      // const baseurl = 'http://localhost:50/eventsandperfs/events/registerEvents.php';
-      const baseurl = 'http://signupforevents.com/OrganiserRegisterEvent.php';
+
+      const baseurl = this.getApiPath ();
+      console.log('get url: ', baseurl);
+      // console.log('fname:', this.fname);
+      // console.log('account:', this.orgaccount);  
+      
 
       axios({
         method: 'post',
@@ -127,16 +131,16 @@ export default {
           console.log(response);
         });
     },
-    resetForm() {
-      this.code = '';
-      this.adddescription = '';
-      this.orgaccount = '';
-      this.description = '';
-      this.venue = '';
-      this.location = '';
-      this.vipcode = '';
-      this.planneddate = '';
-    },
+    // resetForm() {
+    //   this.code = '';
+    //   this.adddescription = '';
+    //   this.orgaccount = '';
+    //   this.description = '';
+    //   this.venue = '';
+    //   this.location = '';
+    //   this.vipcode = '';
+    //   this.planneddate = '';
+    // },
   },
 };
 </script>

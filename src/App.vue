@@ -9,7 +9,7 @@
     <router-view/>
     </div>
     <footer  id="vue-template-footer">
-      &copy; 2020 Register for events
+      &copy; 2023 www.signupforevents.com powered by GlobalMarveltech Ltd 
       <Footer/>
     </footer>
   </div>

@@ -7,8 +7,8 @@
       "SENDEMAILPAGE": "akwabatechsendcontactusemail_commo.php"
     },
   
-    "MANUAL_URL":{ 
-      "CONTACTUS": "http://localhost/htdocdev/signupforevents/src/endpoints/ContactUs.php",
+    "LOCALHOST_DEV":{ 
+      "ContactUs": "http://localhost/htdocdev/signupforevents/src/endpoints/ContactUs.php",
       "CreateUser": "http://localhost/htdocdev/signupforevents/src/endpoints/CreateUser.php",
       "OrganiserRegisterEvent": "http://localhost/htdocdev/signupforevents/src/endpoints/OrganiserRegisterEvent.php",
       "RetrieveBookings":"http://localhost/htdocdev/signupforevents/src/endpoints/RetrieveBookings.php",  
@@ -17,7 +17,7 @@
     },
   
     "DIRECT_LIVE":{
-      "CONTACTUS": "https://signupforevents.com/ContactUs.php",
+      "ContactUs": "https://signupforevents.com/ContactUs.php",
       "CreateUser": "https://signupforevents.com/CreateUser.php",
       "OrganiserRegisterEvent": "https://signupforevents.com/OrganiserRegisterEvent.php",
       "RetrieveBookings":"https://signupforevents.com/RetrieveBookings.php",  

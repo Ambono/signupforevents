@@ -16,7 +16,7 @@ import GetEnvironment from './getEnvironment';
 function getCreateUserUrl(){
     switch(GetEnvironment()){
         case "dev":
-        return  config.MANUAL_URL.CreateUser;
+        return  config.LOCALHOST_DEV.CreateUser;
         case "live":
         return  config.DIRECT_LIVE.CreateUser;
         case "test":
@@ -27,7 +27,7 @@ function getCreateUserUrl(){
  function organiserRegisterEventUrl(){
     switch(GetEnvironment()){
         case "dev":
-        return config.MANUAL_URL.OrganiserRegisterEvent;
+        return config.LOCALHOST_DEV.OrganiserRegisterEvent;
         case "live":
         return config.DIRECT_LIVE.OrganiserRegisterEvent;
         case "test":
@@ -38,7 +38,7 @@ function getCreateUserUrl(){
  function retrieveBookingsUrl(){
     switch(GetEnvironment()){
         case "dev":
-        return config.MANUAL_URL.RetrieveBookings;
+        return config.LOCALHOST_DEV.RetrieveBookings;
         case "live":
         return config.DIRECT_LIVE.RetrieveBookings;
         case "test":
@@ -71,7 +71,7 @@ function userMakeBookingUrl(){
 
 export default function GetUrl(targetUrl){
     switch(targetUrl){
-        case "contactUshairstyle":
+        case "contactUs":
         return getContactUsUrl(); 
 
         case "createUser":
