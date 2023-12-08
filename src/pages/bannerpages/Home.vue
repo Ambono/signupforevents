@@ -3,7 +3,11 @@
 
 <template>
   <div class="vue-template">
-    <p>Here is some information. This is the home page</p>
+<div>
+    <div class="search-wrapper panel-heading col-sm-12">
+    <input type="text" v-model="search" placeholder="Search" /> <br> <br>
+  </div>  
+   </div>
   </div>
 </template>
 

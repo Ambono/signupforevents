@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Navigation/>
-    <!-- <img src="./assets/logo.png"> -->
+    <div id="vue-template-fonddetoile"></div>
+      <!-- <img src="./assets/fonddetoile.png" > -->
+  
+    
     <div id ="central-container">
     <router-view/>
     </div>
@@ -22,6 +25,10 @@ export default {
     Navigation,
     Footer,
   },
+
+  methods:{
+  
+  }
 };
 </script>
 
@@ -45,5 +52,12 @@ export default {
   vertical-align:center;
   width:50%;
   margin-left:25%
+}
+
+#vue-template-fonddetoile {
+   width:100%;
+   height:25%;
+  background: url("./assets/fonddetoile.png") no-repeat center center;
+  margin-bottom: 15px;
 }
 </style>

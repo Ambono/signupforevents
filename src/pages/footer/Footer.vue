@@ -1,12 +1,6 @@
 // eslint-disable-next-line to ignore the next line.
 /* eslint-disable */
 
-<template>
-  <div>
-    <Visits/>
-  </div>
-</template>
-
 <script>
 import Visits from '@/pages/vues/Visits';
 
@@ -17,6 +11,22 @@ export default {
   },
 };
 </script>
+
 <style>
 
 </style>
+
+<template>
+<div>
+  <div>
+    <Ul>
+      
+    </Ul>
+  </div>
+  <div>
+    <Visits/>
+  </div>
+  </div>
+</template>
+
+

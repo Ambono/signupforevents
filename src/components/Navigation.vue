@@ -6,6 +6,9 @@
       v-bind:key="routes.id"
       :to="`${routes.page}`" class="spacing">{{routes.text}}</router-link>
     </nav>
+    <div>
+      
+    </div>
   </div>
 </template>
 

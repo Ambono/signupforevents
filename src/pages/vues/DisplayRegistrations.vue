@@ -1,3 +1,5 @@
+// eslint-disable-next-line to ignore the next line.
+/* eslint-disable */
 <template>
    <div class="vue-template">
   <form>

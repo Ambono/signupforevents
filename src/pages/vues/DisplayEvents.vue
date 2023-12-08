@@ -1,3 +1,5 @@
+// eslint-disable-next-line to ignore the next line.
+/* eslint-disable */
 <template>
    <div class="vue-template">
   <form>
@@ -51,7 +53,7 @@ export default {
 
   mounted() {
     console.log('mounted works!');
-    this.displayTodayEvents();
+    this.displayEvents();
   },
 
 
@@ -64,9 +66,15 @@ export default {
     },
   },
   methods: {
+
+    getApiPathForEvents () {     
+    return GetUrl("getAssetDetailByIdassembling");   
+  },
+ 
     displayEvents() {
-      // const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveEvents.php';
-      const baseurl = 'http://signupforevents.com/RetrieveEvents.php';
+       const baseurl = 'http://localhost/htdocdev/signupforevents/src/endpoints/RetrieveEvents.php';
+     //const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveEvents.php';
+      // const baseurl = 'http://signupforevents.com/RetrieveEvents.php';
 
       if (this.searchtext !== '') {
         axios.get(baseurl, {
@@ -81,8 +89,8 @@ export default {
       this.searchtext = '';
     },
     displayTodayEvents() {
-      // const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveTodayEvents.php';
-      const baseurl = 'http://signupforevents.com/RetrieveTodayEvents.php';
+      const baseurl = 'http://localhost:50/eventsandperfs/events/RetrieveTodayEvents.php';
+      // const baseurl = 'https://signupforevents.com/RetrieveTodayEvents.php';
 
       axios.get(baseurl,
       ).then((response) => {
