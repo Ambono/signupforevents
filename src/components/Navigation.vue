@@ -1,14 +1,17 @@
 <template >
    <div class="navbar-light">
-    <h2>Events and Performances catalog</h2>
-    <nav>
+    <div class="row justify-content-md-center">
+    <div class="col col-lg-5"> 
+     <h2><p class="n1">Events and Performances catalog</p></h2>
+    </div>
+   </div>
+    <div class="row justify-content-md-center" >
+    <nav class="col col-lg-5">
       <router-link v-for="routes in links"
       v-bind:key="routes.id"
       :to="`${routes.page}`" class="spacing">{{routes.text}}</router-link>
-    </nav>
-    <div>
-      
-    </div>
+    </nav>  
+    </div>  
   </div>
 </template>
 
@@ -57,6 +60,10 @@ export default {
 
 <style>
   .spacing {
-    Margin-right: 10px;
+    margin-right: 10px;
+  }
+
+    .n1 {
+    color:darkgoldenrod
   }
 </style>

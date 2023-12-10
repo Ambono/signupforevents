@@ -35,6 +35,19 @@ function getCreateUserUrl(){
         }
 
 }
+
+function searchEventByTextUrl(){
+    switch(GetEnvironment()){
+        case "dev":
+        return config.LOCALHOST_DEV.searchEventByText;
+        case "live":
+        return config.DIRECT_LIVE.searchEventByText;
+        case "test":
+        return config.DIRECT_TEST.searchEventByText;
+        }
+
+}
+
  function retrieveBookingsUrl(){
     switch(GetEnvironment()){
         case "dev":
@@ -47,14 +60,14 @@ function getCreateUserUrl(){
     
 }
  function retrieveEventsUrl(){
-    switch(GetEnvironment()){
-        case "dev":
-        return config.MANUAL_URL.RetrieveEvents;
-        case "live":
-        return config.DIRECT_LIVE.RetrieveEvents;
-        case "test":
-        return config.DIRECT_TEST.RetrieveEvents;
-        }
+   switch(GetEnvironment()){
+   case "dev":
+   return config.MANUAL_URL.RetrieveEvents;
+   case "live":
+return config.DIRECT_LIVE.RetrieveEvents;
+    case "test":
+    return config.DIRECT_TEST.RetrieveEvents;
+         }
 }
 
 function userMakeBookingUrl(){
@@ -72,7 +85,7 @@ function userMakeBookingUrl(){
 export default function GetUrl(targetUrl){
     switch(targetUrl){
         case "contactUs":
-        return getContactUsUrl(); 
+            return getContactUsUrl(); 
 
         case "createUser":
             return getCreateUserUrl(); 
@@ -80,16 +93,19 @@ export default function GetUrl(targetUrl){
         case "organiserRegisterEvent":
             return organiserRegisterEventUrl(); 
 
+        case "searchEventByText":
+            return searchEventByTextUrl(); 
+
         case "retrieveBookings":
-        return retrieveBookingsUrl(); 
+            return retrieveBookingsUrl(); 
 
         case "retrieveEvents":
             return retrieveEventsUrl(); 
         
-        case "retrieveBookingshairstyle":
+        case "retrieveBookings":
             return retrieveBookingsUrl(); 
 
         case "userMakeBooking":
-            return userMakeBookingUrl();                 
-        }    
+            return userMakeBookingUrl();
+        }
 }

@@ -14,6 +14,7 @@
       "RetrieveBookings":"http://localhost/htdocdev/signupforevents/src/endpoints/RetrieveBookings.php",  
       "RetrieveEvents": "http://localhost/htdocdev/signupforevents/src/endpoints/RetrieveEvents.php",     
       "UserMakeBooking":"http://localhost/htdocdev/signupforevents/src/endpoints/UserMakeBooking.php"
+   , "searchEventByTextUrl":"http://localhost/htdocdev/signupforevents/src/endpoints/SearchEventByText.php"
     },
   
     "DIRECT_LIVE":{
@@ -23,6 +24,7 @@
       "RetrieveBookings":"https://signupforevents.com/RetrieveBookings.php",  
       "RetrieveEvents": "https://signupforevents.com/RetrieveEvents.php",     
       "UserMakeBooking":"https://signupforevents.com/UserMakeBooking.php"
+      , "searchEventByTextUrl":"https://signupforevents.com/SearchEventByText.php"
     },
 
     "DIRECT_TEST":{
@@ -32,6 +34,7 @@
       "RetrieveBookings":"https://groupakwabatech.com/RetrieveBookings.php",  
       "RetrieveEvents": "https://groupakwabatech.com/RetrieveEvents.php",     
       "UserMakeBooking":"https://groupakwabatech.com/UserMakeBooking.php"
+      , "searchEventByTextUrl":"https://groupakwabatech.com/SearchEventByText.php"
     },
 
     "CREDENTIALS": {

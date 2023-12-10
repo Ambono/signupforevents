@@ -1,5 +1,3 @@
-/*https://vuex.vuejs.org/guide */
-
 // eslint-disable-next-line to ignore the next line.
 /* eslint-disable */
 
@@ -12,10 +10,10 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import Vuex from 'vuex';
+// import Vue from 'vue';
+// import Vuex from 'vuex';
 
-Vue.use(Vuex);
+// Vue.use(Vuex);
 
 // const store = new Vuex.Store({
 //   state: {

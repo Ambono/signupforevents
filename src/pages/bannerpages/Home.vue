@@ -6,7 +6,13 @@
 <div>
     <div class="search-wrapper panel-heading col-sm-12">
     <input type="text" v-model="search" placeholder="Search" /> <br> <br>
-  </div>  
+  </div> 
+
+   <!-- <div id="vue-dashboard-container">
+
+    <Dashboard/>
+   </div> -->
+
    </div>
   </div>
 </template>

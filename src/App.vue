@@ -1,15 +1,15 @@
+// eslint-disable-next-line to ignore the next line.
+/* eslint-disable */
 <template>
   <div id="app">
     <Navigation/>
     <div id="vue-template-fonddetoile"></div>
       <!-- <img src="./assets/fonddetoile.png" > -->
-  
-    
     <div id ="central-container">
     <router-view/>
     </div>
     <footer  id="vue-template-footer">
-      &copy; 2023 www.signupforevents.com powered by GlobalMarveltech Ltd 
+      &copy; 2023 www.signupforevents.com powered by GlobalMarveltech Ltd
       <Footer/>
     </footer>
   </div>
@@ -19,16 +19,15 @@
 import Navigation from './components/Navigation';
 import Footer from './pages/footer/Footer';
 
+
 export default {
   name: 'App',
   components: {
     Navigation,
     Footer,
   },
-
-  methods:{
-  
-  }
+  // methods:{
+  // }
 };
 </script>
 
@@ -60,4 +59,5 @@ export default {
   background: url("./assets/fonddetoile.png") no-repeat center center;
   margin-bottom: 15px;
 }
+
 </style>

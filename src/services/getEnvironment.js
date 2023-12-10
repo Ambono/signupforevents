@@ -1,6 +1,6 @@
 import config from '../config.json';
 
-export default function GetEnvironment(){   
+export default function GetEnvironment() {   
     if(config.ENVIRONMENT.DEV)
      return "dev";
      if(config.ENVIRONMENT.LIVE)

@@ -31,3 +31,10 @@ http://localhost:8080/#/
 
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+date picker: https://www.youtube.com/watch?v=RgR16rsKg1U
+
+bootstarp grids:  https://getbootstrap.com/docs/5.0/layout/grid/
+

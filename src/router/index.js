@@ -18,6 +18,7 @@ import DisplayTodayEvents from '@/pages/vues/DisplayTodayEvents';
 import DisplayRegistrations from '@/pages/vues/DisplayRegistrations';
 import Footer from '@/pages/footer/Footer';
 import CreateAccount from '@/usersandlogins/CreateUser';
+import Dashboard from '@/Dashboard';
 // eslint-disable-next-line to ignore the next line
 /* eslint-disable */
 import Vuex from 'vuex';
@@ -29,13 +30,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      name: 'Dashboard',
+      component: Dashboard,
     },    
     {
       path: '/home',
-      name: 'Home',
-      component: Home,
+      name: 'Dashboard',
+      component: Dashboard,
     },  
     {
       path: '/createaccount',
